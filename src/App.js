@@ -9,7 +9,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/bfhl', JSON.parse(jsonInput));
+      const response = await axios.post('https://srmbajajplacementapi.onrender.com/bfhl', JSON.parse(jsonInput));
       setResponseData(response.data);
     } catch (error) {
       console.error('Error:', error);
